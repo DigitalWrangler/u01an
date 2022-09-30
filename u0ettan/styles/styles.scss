@@ -16,7 +16,7 @@
     align-items: center;
     text-align: center;
     block-size: 40%;
-    margin-top: 20px;
+    margin-top: 25px;
     padding-top: 8%;
 
     @include mobile {
@@ -31,7 +31,7 @@
       flex-flow: column;
       align-items: center;
       text-align: center;
-      width: 55%;
+      width: 20%;
       line-height: 1.2;
 
       @include tablet {
@@ -92,7 +92,7 @@
       flex-flow: column;
       block-size: 40%;
       margin-top: 900px;
-      padding-top: 10%;
+      padding-top: 12%;
       padding-bottom: 50%;
       align-items: center;
       text-align: center;
@@ -105,7 +105,7 @@
       &--left {
         z-index: 1;
         background-color: white;
-        width: 55%;
+        width: 40%;
         border-radius: 20px;
         line-height: 1.2;
   
@@ -169,7 +169,7 @@
     block-size: 40%;
     margin-top: -10px;
     height: 20%;
-    padding-top: 10%;
+    padding-top: 12%;
     padding-bottom: 50%;
     align-items: center;
     text-align: center;
@@ -183,7 +183,7 @@
       background-color: white;
       z-index: 2;
       border-radius: 20px;
-      width: 55%;
+      width: 40%;
       line-height: 1.2;
 
       @include tablet {
@@ -246,7 +246,7 @@
     flex-flow: column;
     block-size: 40%;
     margin-top: -10px;
-    padding-top: 10%;
+    padding-top: 12%;
     padding-bottom: 50%;
     align-items: center;
     text-align: center;
@@ -260,7 +260,7 @@
       background: white;
       z-index: 2;
       border-radius: 20px;
-      width: 55%;
+      width: 40%;
       line-height: 1.2;
 
       @include tablet {
@@ -324,7 +324,7 @@
     flex-flow: column;
     block-size: 10%;
     margin-top: 20%;
-    padding-top: 10%;
+    padding-top: 12%;
     padding-bottom: 50%;
     padding-right: -5%;
     align-items: center;
@@ -338,7 +338,7 @@
     &--left {
       background: white;
       z-index:2;
-      width: 55%;
+      width: 40%;
       border-radius: 20px;
       line-height: 1.2;
 
@@ -386,11 +386,14 @@
     &--right {
       text-align: center;
     }
-
-    &--img {
-      height: 100%;
-      width: 100%;
-    }
+  }
+  
+  .gmap_canvas{
+    height: 40%;
+    width: 40%;
+    display: flex;
+    align-content: center;
+    margin-left: 33%;
   }
 }
 .signup {
@@ -400,7 +403,7 @@
     flex-flow: column;
     block-size: 40%;
     margin-top: 20%;
-    padding-top: 10%;
+    padding-top: 12%;
     padding-bottom: 40%;
     align-items: center;
     text-align: center;
@@ -441,7 +444,7 @@ input[type=submit]:hover {
       z-index: 2;
       width: 35%;
       border-radius: 20px;
-      padding-bottom: 1%;
+      padding-bottom: 3%;
       line-height: 1.2;
 
       @include tablet {

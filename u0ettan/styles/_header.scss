@@ -86,7 +86,7 @@ div.browser {
 footer {
   height: 0;
   width: 125%;
-  bottom: 10%;
+  bottom: 8%;
   padding-left: 50px;
   padding-right: 50px;
   position: absolute;
@@ -100,13 +100,13 @@ footer {
     justify-content: center;
 		background: $rhino;
 		overflow:visible;
-		padding-bottom: 250px;
+		padding-bottom: 200px;
 
 		ul {
       display: flex;
 			margin: 0;
 			padding: 0;
-      margin-left: -25%;
+      margin-left: -20%;
 		}
 		li {
 			display: inline;
