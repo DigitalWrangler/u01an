@@ -1,35 +1,66 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
-.navbar__menu--links, .navbar__menu, .navbar .logo {
+.navbar__menu--links, .navbar__menu, .logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.video {
+video {
   flex-wrap: wrap;
   -ms-flex-align: center;
-  z-index: 1;
   width: 100%;
-  height: 90%;
+  height: 120%;
   overflow: hidden;
-  top: 0;
+  top: -100;
   left: 0;
   position: relative;
   position: fixed;
   margin: auto;
+  padding-top: -500px;
 }
 @media screen and (max-width: 428px) {
-  .video {
-    height: 22.5%;
+  video {
+    height: 50%;
   }
 }
-.videovideo-bg {
-  width: 50%;
-  padding-top: 10%;
+videovideo-bg {
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  z-index: 5;
+  display: flex;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 32.5vw;
+  top: -1vh;
+}
+@media screen and (max-width: 428px) {
+  .logo {
+    height: 0px;
+    margin-right: -100px;
+    width: 0px;
+    padding-left: 70px;
+    padding-top: 150px;
+    height: -10%;
+    width: -10%;
+  }
+}
+.logo img {
+  height: 380px;
+}
+@media screen and (max-width: 428px) {
+  .logo img {
+    height: 200px;
+  }
 }
 
 .navbar {
+  z-index: 5;
   background: transparent;
   height: 40px;
   display: flex;
@@ -40,25 +71,14 @@
   border: 5px;
   padding: 0;
   position: fixed;
+  top: 20vh;
+  left: 32.5vw;
 }
 @media screen and (max-width: 428px) {
   .navbar {
-    margin-left: -55px;
-    margin-top: -55px;
+    margin-left: -70px;
+    margin-top: -125px;
   }
-}
-.navbar .logo {
-  z-index: 5;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  cursor: pointer;
-  height: 380px;
-  padding-top: 100px;
-  padding-bottom: 115px;
-  margin-top: -10px;
-  margin: 0;
-  padding: 0;
 }
 .navbar__bars {
   opacity: 0;
@@ -74,7 +94,6 @@
   }
 }
 .navbar__menu {
-  z-index: 5;
   top: 10%;
   padding-top: 10%;
   list-style: none;
@@ -107,12 +126,20 @@
   margin: 0.1%;
   padding: 0 1.3rem;
 }
+@media screen and (max-width: 428px) {
+  .navbar__menu--links {
+    font-size: 7px;
+    height: 36px;
+    padding-right: 11%;
+    border-radius: 1%;
+  }
+}
 .navbar__menu--links:hover {
   color: #32de84;
   transition: all 0.5s ease;
 }
 .navbar__menu #button {
-  padding: 0px 25px;
+  padding: 0px 20px;
   border: 10px;
   outline: none;
   text-align: center;
@@ -210,7 +237,7 @@ footer {
   padding-right: 50px;
   position: absolute;
   right: 0%;
-  left: -1.7%;
+  left: -5%;
   z-index: 3;
   position: fixed;
 }
@@ -292,13 +319,12 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
 }
 @media screen and (max-width: 428px) {
   .home__container {
-    padding-top: 100px;
+    padding-top: 0px;
     grid-template-columns: 1fr;
-    height: 100%;
   }
 }
 .home__container--left {
-  background-color: white;
+  background-color: transparent;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -306,37 +332,34 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
   width: 20%;
   line-height: 1.2;
 }
-@media screen and (max-width: 810px) {
-  .home__container--left {
-    padding: 5rem 0;
-  }
-}
 @media screen and (max-width: 428px) {
-  .home__container--left {
+  .home__container {
     line-height: 1.5;
+    width: 60%;
+    padding-top: -100%;
   }
 }
-.home__container--left h1 {
+.home--left h1 {
   font-size: 4rem;
-  color: blueviolet;
+  color: transparent;
   text-align: center;
 }
 @media screen and (max-width: 428px) {
-  .home__container--left h1 {
+  .home--left h1 {
     font-size: 1.5rem;
   }
 }
-.home__container--left h2 {
+.home--left h2 {
   font-size: 4rem;
   color: #222121;
   text-align: center;
 }
 @media screen and (max-width: 428px) {
-  .home__container--left h2 {
+  .home--left h2 {
     font-size: 2rem;
   }
 }
-.home__container--left p {
+.home--left p {
   font-size: 2rem;
   color: #222121;
   margin-top: 1rem;
@@ -344,14 +367,14 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
   text-align: center;
 }
 @media screen and (max-width: 428px) {
-  .home__container--left p {
+  .home--left p {
     font-size: 1.5rem;
   }
 }
-.home__container--right {
+.home--right {
   text-align: center;
 }
-.home__container--img {
+.home--img {
   height: 100%;
   width: 100%;
 }
@@ -362,7 +385,7 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
   flex-flow: column;
   block-size: 40%;
   margin-top: 900px;
-  padding-top: 12%;
+  padding-top: 20%;
   padding-bottom: 50%;
   align-items: center;
   text-align: center;
@@ -436,7 +459,7 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
   block-size: 40%;
   margin-top: -10px;
   height: 20%;
-  padding-top: 12%;
+  padding-top: 20%;
   padding-bottom: 50%;
   align-items: center;
   text-align: center;
@@ -509,7 +532,7 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
   flex-flow: column;
   block-size: 40%;
   margin-top: -10px;
-  padding-top: 12%;
+  padding-top: 20%;
   padding-bottom: 50%;
   align-items: center;
   text-align: center;
@@ -585,7 +608,7 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
   flex-flow: column;
   block-size: 10%;
   margin-top: 20%;
-  padding-top: 12%;
+  padding-top: 20%;
   padding-bottom: 50%;
   padding-right: -5%;
   align-items: center;
@@ -662,7 +685,7 @@ footer div.social-media-links a:hover svg path, footer div.social-media-links a:
   flex-flow: column;
   block-size: 40%;
   margin-top: 20%;
-  padding-top: 12%;
+  padding-top: 20%;
   padding-bottom: 40%;
   align-items: center;
   text-align: center;
