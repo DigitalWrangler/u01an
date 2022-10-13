@@ -1,34 +1,39 @@
 @import 'colors';
 @import 'media-queries';
 
+
+
 %align-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-video {
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  width:100%;
-  height: 120%;
-  overflow:hidden;
-  top:-100;
-  left: 0;
-  position: relative;
+.video {
+/*   flex-wrap: wrap;
+  -ms-flex-align: center; */
+/*   width:100%;
+  height: 100vh; */
+/*   overflow:hidden; */
+/*   top:-37vh; */
+/*   left: 0;
+  right: 0; */
+/*   position: relative; */
+/*   position: fixed; */
+ /*  margin: auto; */
+/*   min-width: 100%;
+  min-height: 100%; */
   position: fixed;
-  margin: auto;
-  padding-top: -500px;
-  
-  @include mobile {
-    height: 50%;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 
-  }
   
-  &video-bg{
-    width: 100%;
+/*   &video-bg{
     z-index: 1;
-  }
+  } */
 }
+
 .logo {
   z-index: 5;
   display: flex;
@@ -43,10 +48,11 @@ video {
   margin:0;
   padding:0;
   position: fixed;
-  left: 32.5vw;
+  left: 35vw;
   top: -1vh;
+  height: -2vh;
 
-  @include mobile {
+/*   @include mobile {
     height: 0px;
     margin-right: -100px;
    width: 0px;
@@ -54,78 +60,84 @@ video {
    padding-top: 150px;
    height: -10%;
    width: -10%;
-  }
+  } */
 
 
   img{
-    height: 380px;
+    height: 50vh;
 
     @include mobile {
-      height: 200px;
+      height: 50vh;
+      
     }
   }
 }
 .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
   background: transparent;
-  height: 40px;
-  display: flex;
-  height: 19%;
-  width: 100%;
-  margin: 0;
-  width: 60%;
-  border: 5px;
-  padding: 0;
+/*   height: 1vh; */
+/*   margin: 0;
+  padding: 0; */
+/*   width: 45%; */
+  top: 35vh;
+  border: 5%;
   position: fixed;
-  top: 20vh;
-  left: 32.5vw;
-
+  left: 40vw;
+  
+  @include tablet{
+    margin-left: 2vw;
+    margin-top: -4vh;
+    left: 25vw;
+  }
 
   @include mobile{
-    margin-left: -70px;
-    margin-top: -125px;
-
+    margin-left: 2vw;
+    margin-top: -4vh;
+    left: 5vw;
   }
+
+
 
   &__bars {
     opacity: 0;
 
-    @include mobile {
+/*     @include mobile {
       color: $dark;
       opacity: 1;
-      position: absolute;
-      top: 22px;
-      right: 20px;
-      font-size: 2rem;
-    }
+      top: 20%;
+      right: ;
+      font-size: 1em;
+    } */
   }
 
   &__menu {
     @extend %align-center;
+    display: flex;
     top: 10%;
     padding-top: 10%;
     list-style: none;
     margin: 0;
-    padding-left: 0%;
+/*     padding-left: 5%; */
 
 
-    @include mobile {
+/*     @include mobile {
       display: flex;
-      align-content: right;
-      position: absolute;
-      padding-top: 220px;
-      font-size: 9px;
-      font-style: bold;
-      margin-left: 10px;
-      height: 2px;
-      max-width: 375px;
-    }
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      font-size: .5rem;
+      font-weight: bold;
+ 
+    } */
 
     &--links {
       font-family: Gill sans;
       font-size: 25px;
       font-style: bold;
-      height: 60px;
+      height: 8vh;
       background: linear-gradient(180deg, rgba(0,138,255,1) 0%, rgba(132,0,255,1) 80%);
       border-radius: 3%;  
       color: $light;
@@ -133,14 +145,13 @@ video {
       justify-content: right;
       text-decoration: none;
       margin: 0.1%;
-      padding: 0 1.3rem;
+      padding-right: 2%;
 
-      @include mobile {
-        font-size: 7px;
-        height: 36px;
-        padding-right: 11%;
-        border-radius: 1%;
-      }
+/*       @include mobile {
+        font-size: 1.5em;
+        height: 15vh;
+        padding-right: 2%;
+      } */
 
       &:hover {
         color: $greenH2;
@@ -149,7 +160,7 @@ video {
     }
       
       #button {
-        padding: 0px 20px;
+        padding: 7vh;
         border: 10px;
         outline: none;
         text-align: center;

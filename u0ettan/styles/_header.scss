@@ -84,24 +84,36 @@ div.browser {
 }
 
 footer {
-  height: 0;
-  width: 125%;
-  bottom: 8%;
-  padding-left: 50px;
-  padding-right: 50px;
-  position: absolute;
+/*   position: relative;
+  width: 210%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+/*   bottom: 8%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: auto;
   right: 0%;
-  left: -5%;
-  z-index: 3;
+  z-index: 3; 
+  left: -5%;*/
   position: fixed;
-
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+  height: 100px;
+  
+  
   div.social-media-links {
     display: flex;
     justify-content: center;
 		background: $rhino;
 		overflow:visible;
 		padding-bottom: 200px;
-
+    min-width: 100%;
+    min-height: 100%;
+    
 		ul {
       display: flex;
 			margin: 0;
