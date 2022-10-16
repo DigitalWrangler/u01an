@@ -66,10 +66,14 @@
   img{
     height: 50vh;
 
-    @include mobile {
-      height: 50vh;
-      
+    @include tablet{
+      height: 20vh;
     }
+
+    @include mobile {
+      height: 20vh;
+
+   }
   }
 }
 .navbar {
@@ -83,7 +87,7 @@
   padding: 0; */
 /*   width: 45%; */
   top: 35vh;
-  border: 5%;
+  border: 2px;
   position: fixed;
   left: 40vw;
   
@@ -94,9 +98,20 @@
   }
 
   @include mobile{
-    margin-left: 2vw;
-    margin-top: -4vh;
+/*     margin-left: 2vw;
+    margin-right: 1vw;
+    margin-top: 1vh;
     left: 5vw;
+    font-size: 2em;
+    scale: (0.9); */
+/*     padding-right: 50vw; */
+    margin-left: 2vw;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    left: 50vw;
+    width: 50vw;
+    scale: (.9);
+    
   }
 
 
@@ -160,7 +175,7 @@
     }
       
       #button {
-        padding: 7vh;
+        padding: 20px;
         border: 10px;
         outline: none;
         text-align: center;
@@ -173,7 +188,7 @@
           color: $greenH2;
           background: $buttonColor1;
           transition: all 2s ease;
-          transform: translateY(-10px);
+          transform: translateY(-5px);
         }
       }
     }

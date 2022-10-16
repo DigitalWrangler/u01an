@@ -26,8 +26,8 @@ body{
     align-items: center;
     text-align: center;
     block-size: 50%;
-    margin-top: auto;
-    padding-top: 8%;
+    margin-top: 20%;
+    padding-top: 24%;
 
 /*     @include mobile {
       padding-top: 0px;
@@ -47,6 +47,8 @@ body{
 
       @include mobile {
         line-height: 1.5;
+        padding-top: 250%;
+
 /*         width: 100%;
         padding-top: 100%; */
       }
@@ -103,12 +105,13 @@ body{
     &__container {
       display: flex;
       align-items: center;
-/*       justify-content: center; */
       text-align: center;
       flex-flow: column;
       block-size: 50%;
       margin-top: auto;
-      padding-top: 37%;
+      margin-right: auto;
+      padding-top: 50vh;
+      padding-bottom: 37%;
 
   
 /*       @include tablet {
@@ -135,20 +138,22 @@ body{
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 3em;
+          /* padding: 3em; */
           line-height: 1.5;
-          margin-top: auto;
+          margin-top: 5%;
           width: 50%;
         }
         @include mobile{
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          line-height: 1.5;
-          margin-left: 100vw;
-          margin-top: auto;
-          width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5;
+        margin-left: 80vw;
+        margin-right: 80vw;
+        margin-top: auto;
+        width: 100%;
+        font-size: smaller;
   
         }
 
@@ -212,9 +217,9 @@ body{
     text-align: center;
     flex-flow: column;
     block-size: 50%;
-    margin-top: 20%;
-    margin-right: 5%;
-    padding-top: auto;
+    margin-top: auto;
+    margin-right: auto;
+    padding-top: 50vh;
     padding-bottom: 37%;
 
 
@@ -229,7 +234,7 @@ body{
       background-color: white;
       z-index: 2;
       border-radius: 20px;
-/*       width: 50%; */
+      width: 50%;
       line-height: 1.2;
 
 /*       @include tablet {
@@ -246,7 +251,7 @@ body{
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: auto;
+        margin-top: 5%;
         width: 50%;
       }
       @include mobile{
@@ -255,7 +260,8 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        margin-left: 100vw;
+        margin-left: 85vw;
+        margin-right: 82.5vw;
         margin-top: auto;
         width: 100%;
 
@@ -316,9 +322,9 @@ body{
     text-align: center;
     flex-flow: column;
     block-size: 50%;
-    margin-top: 20%;
-    margin-right: 5%;
-    padding-top: auto;
+    margin-top: auto;
+    margin-right: auto;
+    padding-top: 50vh;
     padding-bottom: 37%;
 
 /*     @include tablet {
@@ -340,7 +346,7 @@ body{
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: auto;
+        margin-top: 5%;
         width: 50%;
       }
       @include mobile{
@@ -349,7 +355,8 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        margin-left: 100vw;
+        margin-left: 85vw;
+        margin-right: 82vw;
         margin-top: auto;
         width: 100%;
 
@@ -406,7 +413,7 @@ body{
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: auto;
+        margin-top: 5%;
         width: 100%;
         height: fit-content;
       }
@@ -416,9 +423,10 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
+        margin-left: 85vw;
+        margin-right: 81vw;
         margin-top: auto;
-        width: 100vw;
-
+        width: 100%;
 
       }
     }
@@ -432,29 +440,20 @@ body{
 
 .contact {
   &__container {
-/*     display: flex;
-    flex-flow: column;
-    block-size: 10%;
-    margin-top: 20%;
-    padding-top: 20%;
-    padding-bottom: 50%;
-    padding-right: -5%;
-    align-items: center;
-    text-align: center; */
     display: flex;
     align-items: center;
     text-align: center;
     flex-flow: column;
-    block-size: 100%;
+    block-size: 50%;
     margin-top: auto;
-    margin-left: auto;
-/*     padding-top: 37%;
-    padding-bottom: 37%; */
-/* 
+    margin-right: auto;
+    padding-top: 50vh;
+    padding-bottom: 37%;
+
     @include tablet {
       grid-template-columns: 1fr;
       height: 100%;
-    } */
+    } 
 
 
     &--left {
@@ -471,7 +470,7 @@ body{
         align-items: center;
 /*         padding: 3em; */
         line-height: 1.5;
-        margin-top: auto;
+        margin-top: 5%;
         width: 70%;
       }
       @include mobile{
@@ -480,8 +479,9 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        margin-left: 100vw;
-        margin-top: auto;
+        margin-left: 85vw;
+        margin-right: 80vw;
+        margin-top: 17%;
         width: 100%;
 
       }
@@ -554,7 +554,6 @@ body{
     block-size: 50%;
     margin-top: auto;
     margin-right: auto;
-    padding-top: 55vh;
     padding-bottom: 37%;
 
 
@@ -599,7 +598,7 @@ input[type=submit]:hover {
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: auto;
+        margin-top: 27%;
         width: 50%;
       }
       @include mobile{
@@ -607,10 +606,12 @@ input[type=submit]:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        line-height: 1.5;
-        margin-left: 100vw;
-        margin-top: auto;
+        line-height: 1;
+        margin-left: 90vw;
+        margin-right: 88vw;
+        margin-top: 12vh;
         width: 100%;
+        padding-top: 2vh;
 
       }
     }
@@ -656,7 +657,7 @@ input[type=submit]:hover {
       width: 100%;
     }
     &--btn {
-      font-size: 2rem;
+      font-size: 5rem;
       background: linear-gradient(180deg, rgba(0,138,255,1) 0%, rgba(132,0,255,1) 80%);;
       padding: 30px 42px;
       border: none;

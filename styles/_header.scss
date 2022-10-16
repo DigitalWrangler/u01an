@@ -113,13 +113,27 @@ footer {
 		padding-bottom: 200px;
     min-width: 100%;
     min-height: 100%;
+    .footer__copyrights{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: auto;
+    }
     
 		ul {
       display: flex;
 			margin: 0;
 			padding: 0;
-      margin-left: -20%;
+      margin-left: 1%;
+      
 		}
+    @include tablet{
+      margin-left: -20%;
+    }
+    @include mobile{
+      margin-left: -20%;
+      padding-right: 16%;
+    }
 		li {
 			display: inline;
 			margin: 0;
