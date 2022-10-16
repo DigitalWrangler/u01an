@@ -26,13 +26,9 @@ body{
     align-items: center;
     text-align: center;
     block-size: 50%;
-    margin-top: 20%;
-    padding-top: 24%;
+    margin-top: auto;
+    padding-top: 50%;
 
-/*     @include mobile {
-      padding-top: 0px;
-      grid-template-columns: 1fr;
-    } */
 
     &--left {
       background-color: transparent;
@@ -47,10 +43,7 @@ body{
 
       @include mobile {
         line-height: 1.5;
-        padding-top: 250%;
 
-/*         width: 100%;
-        padding-top: 100%; */
       }
     }
 
@@ -84,6 +77,9 @@ body{
       @include mobile {
         font-size: 1.5rem;
       }
+      @include tablet {
+        padding: 100%;
+      }
     }
 
     &--right {
@@ -103,6 +99,7 @@ body{
  
   .about {
     &__container {
+
       display: flex;
       align-items: center;
       text-align: center;
@@ -110,21 +107,9 @@ body{
       block-size: 50%;
       margin-top: auto;
       margin-right: auto;
-      padding-top: 50vh;
+      padding-top: 60vh;
       padding-bottom: 37%;
 
-  
-/*       @include tablet {
-        grid-template-columns: 1fr;
-        height: 50%;
-
-      }
-      @include mobile{
-        max-width: 50%;
-        padding: 2em;
-        line-height: 1.5;
-        margin-left: 100%;
-      } */
   
       &--left {
         z-index: 1;
@@ -138,23 +123,20 @@ body{
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          /* padding: 3em; */
           line-height: 1.5;
-          margin-top: 5%;
-          width: 50%;
+          margin-top: auto;
+          width: 100%;
         }
         @include mobile{
           display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.5;
-        margin-left: 80vw;
-        margin-right: 80vw;
-        margin-top: auto;
-        width: 100%;
-        font-size: smaller;
-  
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          line-height: 1.5;
+          margin-right: 1vw;
+          margin-top: auto;
+          width: 100%;
+
         }
 
       }
@@ -186,9 +168,6 @@ body{
         font-weight: 700;
         text-align: center;
   
-/*         @include mobile {
-          font-size: 1.5rem;
-        } */
       }
   
       &--right {
@@ -219,31 +198,21 @@ body{
     block-size: 50%;
     margin-top: auto;
     margin-right: auto;
-    padding-top: 50vh;
+    padding-top: 60vh;
     padding-bottom: 37%;
 
 
 
 
-/*     @include tablet {
-      grid-template-columns: 1fr;
-      height: 100%;
-    } */
+
 
     &--left {
       background-color: white;
       z-index: 2;
       border-radius: 20px;
-      width: 50%;
+
       line-height: 1.2;
 
-/*       @include tablet {
-        padding: 2rem ;
-      }
-
-      @include mobile {
-        line-height: 1.5;
-      } */
       @include tablet {
         display: flex;
         flex-direction: column;
@@ -251,8 +220,8 @@ body{
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: 5%;
-        width: 50%;
+        margin-top: auto;
+        width: 100%;
       }
       @include mobile{
         display: flex;
@@ -260,11 +229,9 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        margin-left: 85vw;
-        margin-right: 82.5vw;
+        margin-right: 1vw;
         margin-top: auto;
-        width: 100%;
-
+        width: 100%; 
       }
     }
 
@@ -317,6 +284,7 @@ body{
   
 .event {
   &__container {
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -324,19 +292,15 @@ body{
     block-size: 50%;
     margin-top: auto;
     margin-right: auto;
-    padding-top: 50vh;
+    padding-top: 60vh;
     padding-bottom: 37%;
 
-/*     @include tablet {
-      grid-template-columns: 1fr;
-      height: 100%;
-    } */
 
     &--left {
       background: white;
       z-index: 2;
       border-radius: 20px;
-/*       width: 40%; */
+
       line-height: 1.2;
 
       @include tablet {
@@ -346,8 +310,8 @@ body{
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: 5%;
-        width: 50%;
+        margin-top: auto;
+        width: 100%;
       }
       @include mobile{
         display: flex;
@@ -355,8 +319,7 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        margin-left: 85vw;
-        margin-right: 82vw;
+        margin-right: 1vw;
         margin-top: auto;
         width: 100%;
 
@@ -396,13 +359,7 @@ body{
     }
 
     &--left img {
-/*       height: 40vh;
-      width: 40vh;
-      display: flex;
-      justify-content: center;
-      align-content: center; */
-/*       height: 100vh;
-      width: 100vw; */
+
       display: flex;
       justify-content: center;
       align-content: center;
@@ -413,7 +370,7 @@ body{
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: 5%;
+        margin-top: auto;
         width: 100%;
         height: fit-content;
       }
@@ -423,10 +380,9 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        margin-left: 85vw;
-        margin-right: 81vw;
         margin-top: auto;
-        width: 100%;
+        width: 100vw;
+
 
       }
     }
@@ -441,19 +397,14 @@ body{
 .contact {
   &__container {
     display: flex;
-    align-items: center;
-    text-align: center;
-    flex-flow: column;
-    block-size: 50%;
-    margin-top: auto;
-    margin-right: auto;
-    padding-top: 50vh;
-    padding-bottom: 37%;
-
-    @include tablet {
-      grid-template-columns: 1fr;
-      height: 100%;
-    } 
+      align-items: center;
+      text-align: center;
+      flex-flow: column;
+      block-size: 50%;
+      margin-top: auto;
+      margin-right: auto;
+      padding-top: 60vh;
+      padding-bottom: 37%;
 
 
     &--left {
@@ -470,8 +421,8 @@ body{
         align-items: center;
 /*         padding: 3em; */
         line-height: 1.5;
-        margin-top: 5%;
-        width: 70%;
+        margin-top: auto;
+        width: 100%;
       }
       @include mobile{
         display: flex;
@@ -479,9 +430,8 @@ body{
         justify-content: center;
         align-items: center;
         line-height: 1.5;
-        margin-left: 85vw;
-        margin-right: 80vw;
-        margin-top: 17%;
+        margin-right: 1vw;
+        margin-top: auto;
         width: 100%;
 
       }
@@ -539,14 +489,7 @@ body{
 .signup {
 
   &__container {
-/*     display: flex;
-    flex-flow: column;
-    block-size: 40%;
-    margin-top: 20%;
-    padding-top: 20%;
-    padding-bottom: 40%;
-    align-items: center;
-    text-align: center; */
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -554,6 +497,7 @@ body{
     block-size: 50%;
     margin-top: auto;
     margin-right: auto;
+    padding-top: 60vh;
     padding-bottom: 37%;
 
 
@@ -598,20 +542,18 @@ input[type=submit]:hover {
         align-items: center;
         padding: 3em;
         line-height: 1.5;
-        margin-top: 27%;
-        width: 50%;
+        margin-top: 0%;
+        width: 100%;
       }
       @include mobile{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        line-height: 1;
-        margin-left: 90vw;
-        margin-right: 88vw;
-        margin-top: 12vh;
+        line-height: 1.5;
+        margin-right: 1vw;
+        margin-top: auto;
         width: 100%;
-        padding-top: 2vh;
 
       }
     }
@@ -657,7 +599,7 @@ input[type=submit]:hover {
       width: 100%;
     }
     &--btn {
-      font-size: 5rem;
+      font-size: 2rem;
       background: linear-gradient(180deg, rgba(0,138,255,1) 0%, rgba(132,0,255,1) 80%);;
       padding: 30px 42px;
       border: none;

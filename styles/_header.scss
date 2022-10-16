@@ -84,20 +84,7 @@ div.browser {
 }
 
 footer {
-/*   position: relative;
-  width: 210%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-/*   bottom: 8%;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  margin-top: auto;
-  right: 0%;
-  z-index: 3; 
-  left: -5%;*/
+
   position: fixed;
   width: 100%;
   background-color: black;
@@ -107,33 +94,31 @@ footer {
   
   div.social-media-links {
     display: flex;
+    align-items: center;
     justify-content: center;
 		background: $rhino;
 		overflow:visible;
 		padding-bottom: 200px;
     min-width: 100%;
     min-height: 100%;
-    .footer__copyrights{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: auto;
-    }
+
     
 		ul {
       display: flex;
 			margin: 0;
 			padding: 0;
       margin-left: 1%;
-      
+      padding-right: 10%;
+
 		}
     @include tablet{
       margin-left: -20%;
     }
     @include mobile{
       margin-left: -20%;
-      padding-right: 16%;
     }
+
+
 		li {
 			display: inline;
 			margin: 0;
@@ -183,5 +168,15 @@ footer {
 				}
 			}
 		}
+
+    .footer__copyrights{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: auto;
+      padding-top: 10%;
+      
+
+    }
 	}
 }
