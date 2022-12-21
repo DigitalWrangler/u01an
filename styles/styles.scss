@@ -27,7 +27,7 @@ body{
     text-align: center;
     block-size: 50%;
     margin-top: auto;
-    padding-top: 50%;
+    padding-top: 40%;
 
 
     &--left {
@@ -107,7 +107,7 @@ body{
       block-size: 50%;
       margin-top: auto;
       margin-right: auto;
-      padding-top: 60vh;
+      padding-top: 30vh;
       padding-bottom: 37%;
 
   
@@ -198,7 +198,7 @@ body{
     block-size: 50%;
     margin-top: auto;
     margin-right: auto;
-    padding-top: 60vh;
+    padding-top: 20vh;
     padding-bottom: 37%;
 
 
@@ -231,7 +231,7 @@ body{
         line-height: 1.5;
         margin-right: 1vw;
         margin-top: auto;
-        width: 100%; 
+        width: 80%; 
       }
     }
 
@@ -289,7 +289,7 @@ body{
     align-items: center;
     text-align: center;
     flex-flow: column;
-    block-size: 50%;
+    block-size: 10%;
     margin-top: auto;
     margin-right: auto;
     padding-top: 60vh;
@@ -363,6 +363,8 @@ body{
       display: flex;
       justify-content: center;
       align-content: center;
+      height: 55vh;
+      border-radius: 10%;
       @include tablet {
         display: flex;
         flex-direction: column;
@@ -371,7 +373,7 @@ body{
         padding: 3em;
         line-height: 1.5;
         margin-top: auto;
-        width: 100%;
+        width: 50%;
         height: fit-content;
       }
       @include mobile{
@@ -381,7 +383,7 @@ body{
         align-items: center;
         line-height: 1.5;
         margin-top: auto;
-        width: 100vw;
+        width: 80vw;
 
 
       }
@@ -432,7 +434,7 @@ body{
         line-height: 1.5;
         margin-right: 1vw;
         margin-top: auto;
-        width: 100%;
+        width: 70%;
 
       }
     }
@@ -530,7 +532,7 @@ input[type=submit]:hover {
     &--left {
       background: white;
       z-index: 2;
-      width: 35%;
+      width: 50%;
       border-radius: 20px;
       padding-bottom: 3%;
       line-height: 1.2;

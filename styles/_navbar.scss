@@ -20,56 +20,60 @@
 }
 
 .logo {
-  z-index: 5;
+  z-index: 1;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-content: left;
+  justify-content: left;
   cursor: pointer;
 
-  @extend %align-center;
+  
   margin:0;
   padding:0;
   position: sticky;
-  top: 8vh;
+  top: 3vh;
 
 
   img{
-    height: 50vh;
+    height: 30vh;
 
     @include tablet{
-      height: 35vh;
+      height: 20vh;
+      
 
     }
 
     @include mobile {
-      height: 20vh;
+      height: 15vh;
+
 
    }
   }
 }
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
+  justify-content: left;
+  align-items: left;
+  z-index: 1;
   background: transparent;
 
-  top: 45vh;
+  top: 30vh;
   border: 2px;
   position: fixed;
-  left: 35vw;
+  left: 2.5vw;
   
   @include tablet{
-    margin-left: 2vw;
-    height: 1%;
-    left: 20vw;
+    margin-left: 1vw;
+    height: 10%;
+    right: 95vw;
+    bottom: 0vw;
+    padding-top: 10%
   }
 
   @include mobile{
     left: 2VW;
     margin-right: 1vw;
-    margin-top: 1vh;
-    right: 10vw;
+    margin-top: -5vh;
+    right: 85vw;
     scale: (0.7);
     
   }
@@ -86,29 +90,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 10%;
-    padding-top: 10%;
+    top: 0%;
+    padding-top: 0%;
+    padding-left: 65%;
     list-style: none;
     margin: 0;
 
     ul{
       li{
         list-style: none;
-        display: inline-block;
+        display: table-row;
       }
     }
     &--links {
       font-family: Gill sans;
-      font-size: 1.4em;
+      font-size: 1.3em;
       font-style: bold;
-      height: 8vh;
+      height: 6vh;
       background: linear-gradient(180deg, rgba(0,138,255,1) 0%, rgba(132,0,255,1) 80%);
-      border-radius: 3%;  
+      border-radius: 5%;  
       color: $light;
       @extend %align-center;
       justify-content: right;
       text-decoration: none;
-      padding-right: 2%;
+      padding-right: 20%;
 
 
 
@@ -119,13 +124,14 @@
     }
       
       #button {
-        padding: 10px;
+        padding: 25px;
         border: 10px;
         outline: none;
         text-align: center;
         border-radius: 3%;
         background: linear-gradient(180deg, rgba(0,138,255,1) 0%, rgba(132,0,255,1) 80%);
         margin-left: 1px;
+        margin-right: 1px;
         color: $light;
   
         &:hover {
